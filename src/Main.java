@@ -29,6 +29,20 @@ public class Main {
             System.out.println(claimStrFull);
 
         // Task 3
+
+        short numPass ; /* numbers of passangers */
+        short numSeats = 60 ; /* numbers of seats  */
+        short totalSeats = 102; /* total of seats  */
+
+        numPass = 161;
+
+        if (numPass <= numSeats)
+            System.out.println("В вагоне есть ещё и сидячие и стоячие места ! ");
+        if (numPass > numSeats & numPass <= totalSeats)
+            System.out.println("В вагоне есть ещё стоячие места ! ");
+        if (numPass > totalSeats)
+            System.out.println("В вагоне нет свободных мест ! " + " В нём уже " + (numPass - totalSeats) + " лишних пассажиров! ");
+
         // Task 4
 
     }
