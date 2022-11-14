@@ -34,7 +34,7 @@ public class Main {
         short numSeats = 60 ; /* numbers of seats  */
         short totalSeats = 102; /* total of seats  */
 
-        numPass = 161;
+        numPass = 611;
 
         if (numPass <= numSeats)
             System.out.println("В вагоне есть ещё и сидячие и стоячие места ! ");
@@ -60,5 +60,16 @@ public class Main {
             claimStrFull += " Если нет - поторопитесь !";
         System.out.println(claimStrFull);
 
+        // Task 6
+
+        if (numPass <= numSeats)
+            System.out.println("В вагоне есть ещё и сидячие и стоячие места ! ");
+        else {
+            if (numPass > numSeats & numPass <= totalSeats)
+                System.out.println("В вагоне есть ещё стоячие места ! ");
+            else
+                System.out.println("В вагоне нет свободных мест ! " + " В нём уже " + (numPass - totalSeats) + " лишних пассажиров! ");
+        }
     }
+
 }
