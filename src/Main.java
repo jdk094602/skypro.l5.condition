@@ -68,7 +68,7 @@ public class Main {
             if (numPass > numSeats & numPass <= totalSeats)
                 System.out.println("В вагоне есть ещё стоячие места ! ");
             else
-                System.out.println("В вагоне нет свободных мест ! " + " В нём уже " + (numPass - totalSeats) + " лишних пассажиров! ");
+                System.out.println("В вагоне нет свободных мест ! " + " В нём уже " + (numPass - totalSeats) + " лишних пассажиров!");
         }
     }
 
