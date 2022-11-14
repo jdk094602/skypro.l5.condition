@@ -2,7 +2,7 @@
 public class Main {
     public static void main(String[] args) {
 
-     // Task 1
+     // Task 1+4
         short ageUser  = 7;
         String claimStr = "Ваш возраст "  + ageUser + " !  "  ;
         String claimStrFull ;
@@ -15,7 +15,7 @@ public class Main {
         System.out.println(claimStrFull);
 
         // Task 2
-        ageUser  = 28;
+        ageUser  = 18;
 
         claimStrFull   = "Ваш возраст - "  + ageUser + " !  "  ;
             if (ageUser >= 7 & ageUser <= 17)
@@ -44,6 +44,21 @@ public class Main {
             System.out.println("В вагоне нет свободных мест ! " + " В нём уже " + (numPass - totalSeats) + " лишних пассажиров! ");
 
         // Task 4
+
+        claimStrFull   = "Ваш возраст - "  + ageUser + " !  "  ;
+        if (ageUser >= 7 & ageUser <= 17) {
+
+            claimStrFull += "Надеюсь, Вы исправно ходите в школу ! ";
+        }
+        else {
+            if (ageUser > 17 & ageUser < 24)
+                claimStrFull  +=  "Надеюсь, Вы уже учитесь в  ВУЗ-е ! " ;
+            else
+                claimStrFull  +=  "Надеюсь, Вы успешно закончили ВУЗ и уже нашли работу ! " ;
+        }
+        if (ageUser >= 7)
+            claimStrFull += " Если нет - поторопитесь !";
+        System.out.println(claimStrFull);
 
     }
 }
