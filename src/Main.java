@@ -70,6 +70,24 @@ public class Main {
             else
                 System.out.println("В вагоне нет свободных мест ! " + " В нём уже " + (numPass - totalSeats) + " лишних пассажиров!");
         }
+        // Task 7
+        ageUser  = 1;
+
+        claimStrFull   = "Ваш возраст - "  + ageUser + " !  "  ;
+        if (ageUser >= 2 && ageUser < 7)
+            claimStrFull   +=   "Надеюсь, Вы исправно ходите в детский сад ! " ;
+        if (ageUser >= 7 && ageUser <= 18)
+            claimStrFull   +=   "Надеюсь, Вы исправно ходите в школу ! " ;
+        if (ageUser > 18 && ageUser <= 24)
+            claimStrFull  +=  "Надеюсь, Вы уже учитесь в  ВУЗ-е ! " ;
+        if (ageUser > 24 && ageUser <= 60)
+            claimStrFull  +=  "Надеюсь, Вы успешно закончили ВУЗ и уже нашли работу ! " ;
+        if (ageUser < 2 || ageUser > 60 )
+            claimStrFull += " Для Вас пока нет рекомендаций!";
+        else
+            claimStrFull += " Если нет - поторопитесь !";
+        System.out.println(claimStrFull);
+
     }
 
 }
