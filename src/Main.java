@@ -88,6 +88,44 @@ public class Main {
             claimStrFull += " Если нет - поторопитесь !";
         System.out.println(claimStrFull);
 
+        // Task 8
+        ageUser  = 99;
+
+        claimStrFull   = "Ваш возраст - "  + ageUser + " !  "  ;
+        if (ageUser < 5) {
+            claimStrFull += "Вам пока рано рисковать жизнью на аттракционах! ";
+        }
+        else {
+            if (ageUser >= 5)
+                claimStrFull += "Добро пожаловать на аттракцион ! ";
+            if (ageUser < 14)
+                claimStrFull += "Но только в сопровождении взрослого ! ";
+        }
+        if (ageUser > 70)
+            claimStrFull += "Осторожней , не рассыпьте песок )) ! ";
+
+        System.out.println(claimStrFull);
+
+        // Task 9
+        int one = 99;
+        int two = 9;
+        int three = -99;
+
+        System.out.println( "Из представленных трёх чисел : "  + one + " " + two + " " + three + "  самое большое : " );
+        if (one > two) {
+            if (one > three) {
+                System.out.println(one);
+            } else
+                System.out.println(three);
+        }
+        else {
+            if (two > three) {
+                System.out.println(two);
+            } else
+            System.out.println(three);
+        }
+
+
     }
 
 }
